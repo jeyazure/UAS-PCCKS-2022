@@ -9,7 +9,7 @@ jobs:
     
     - name: build and tag image
       run: |
-        docker build -t ACCESS_TOKEN/uas-pccks:latest -f Dockerfile .
+        docker build -t usernamee/uas-pccks:latest -f Dockerfile .
     
     - name: push to dockerhub
-      run: docker login -u ${{secrets.ACCESS_TOKEN}} -p ${{secrets.dckr_pat_oGF5YhY2rukv5m1k0aK08D2mcow}} && docker push ACCESS_TOKEN/uas-pccks:latest
+      run: docker login -u ${{secrets.usernamee} -p ${{secrets.ACCESS_TOKEN}} && docker push usernamee/uas-pccks:latest
