@@ -9,7 +9,7 @@ jobs:
     
     - name: build and tag image
       run: |
-        docker build -t jemimamutiazahra/uas-pccks:latestt -f Dockerfile .
+        docker build -t jemimamutiazahra/uas-pccks:latest -f Dockerfile .
     
     - name: push to dockerhub
-      run: docker login -u ${{secrets.jemimamutiazahra}} -p ${{secrets.ACCESS_TOKEN}} && docker push jemimamutiazahra/uas-pccks:latestt
+      run: docker login -u ${{secrets.jemimamutiazahra}} -p ${{secrets.ACCESS_TOKEN}} && docker push jemimamutiazahra/uas-pccks:latest
