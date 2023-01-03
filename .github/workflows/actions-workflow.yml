@@ -9,7 +9,7 @@ jobs:
     
     - name: build and tag image
       run: |
-        docker build -t JEMIMA/uas-pccks:latest -f Dockerfile .
+        docker build -t jemimamutiazahra/uas-pccks:latest -f Dockerfile .
     
     - name: push to dockerhub
-      run: docker login -u ${{secrets.JEMIMA} -p ${{secrets.ACCESS_TOKEN}} && docker push JEMIMA/uas-pccks:latest
+      run: docker login -u ${{secrets.jemimamutiazahra} -p ${{secrets.ACCESS_TOKEN}} && docker push jemimamutiazahra/uas-pccks:latest
